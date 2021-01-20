@@ -4,5 +4,3 @@ LICENSE = "MIT"
 include recipes-core/images/core-image-minimal.bb
 
 IMAGE_FEATURES_append = " x11 splash"
-
-IMAGE_INSTALL += "fx-swupdate"
