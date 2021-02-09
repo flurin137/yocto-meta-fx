@@ -3,7 +3,7 @@ LICENSE = "MIT"
 
 include recipes-core/images/core-image-minimal.bb
 
-IMAGE_FEATURES_append = " splash"
+IMAGE_FEATURES_append = " splash ssh-server-dropbear"
 
 IMAGE_INSTALL += "swupdate"
-IMAGE_INSTALL += "systemd"
+IMAGE_FSTYPES += "wic ext4.gz"
