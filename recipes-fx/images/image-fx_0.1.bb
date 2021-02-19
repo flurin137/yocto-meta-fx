@@ -4,6 +4,5 @@ LICENSE = "MIT"
 include recipes-core/images/core-image-minimal.bb
 
 IMAGE_FEATURES_append = " splash ssh-server-dropbear"
-
-IMAGE_INSTALL += "swupdate"
-IMAGE_FSTYPES += "wic ext4.gz"
+IMAGE_INSTALL_append = " swupdate swupdate-www"
+IMAGE_FSTYPES_append = " wic ext4.gz"

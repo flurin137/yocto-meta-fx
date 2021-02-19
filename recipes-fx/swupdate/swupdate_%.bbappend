@@ -5,6 +5,7 @@ PACKAGECONFIG_CONFARGS = ""
 SRC_URI += " \
     file://09-swupdate-args \
     file://swupdate.cfg \
+    file://hwrevision \
     "
 
 do_install_append() {
@@ -12,4 +13,5 @@ do_install_append() {
 
     install -d ${D}${sysconfdir}
     install -m 644 ${WORKDIR}/swupdate.cfg ${D}${sysconfdir}
+    install -m 644 ${WORKDIR}/hwrevision ${D}${sysconfdir}
 }

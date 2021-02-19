@@ -2,13 +2,13 @@ software =
 {
     version = "0.1.0";
 
-    raspberrypi3 = {
+    raspberrypi = {
         hardware-compatibility: [ "1.0"];
         stable : {
             copy1 : {
                 images: (
                     {
-                        filename = "image-fx-raspberrypi4.ext4.gz";
+                        filename = "image-fx-raspberrypi.ext4.gz";
                         type = "raw";
                         compressed = true;
                         device = "/dev/mmcblk0p2";
@@ -31,7 +31,7 @@ software =
             copy2 : {
                 images: (
                     {
-                        filename = "image-fx-raspberrypi4.ext4.gz";
+                        filename = "image-fx-raspberrypi.ext4.gz";
                         type = "raw";
                         compressed = true;
                         device = "/dev/mmcblk0p3";
