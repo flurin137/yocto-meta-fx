@@ -1,6 +1,6 @@
 software =
 {
-    version = "0.1.0";
+    version = "0.1.1";
 
     raspberrypi = {
         hardware-compatibility: [ "1.0" ];
@@ -8,10 +8,10 @@ software =
             {
                 filename = "image-fx-raspberrypi.ext4.gz";
                 type = "raw";
-                sha256 = "@cp-image-core-openstlinux-eglfs-stm32mp1-cp.ext4.gz";
+                sha256 = "@image-fx-raspberrypi.ext4.gz";
                 installed-directly = true;
                 compressed = true;
-                device = "/dev/mmcblk0p1";
+                device = "/dev/mmcblk0p2";
             }
         );
     }
