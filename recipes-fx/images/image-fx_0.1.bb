@@ -4,5 +4,5 @@ LICENSE = "MIT"
 include recipes-core/images/core-image-minimal.bb
 
 IMAGE_FEATURES_append = " splash ssh-server-dropbear"
-IMAGE_INSTALL_append = " swupdate swupdate-www libubootenv-bin"
+IMAGE_INSTALL_append = " rauc libubootenv-bin"
 IMAGE_FSTYPES_append = " wic ext4.gz"
