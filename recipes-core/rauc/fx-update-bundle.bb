@@ -1,6 +1,6 @@
 inherit bundle
 
-RAUC_BUNDLE_COMPATIBLE = "fx"
+RAUC_BUNDLE_COMPATIBLE = "${MACHINE}"
 RAUC_BUNDLE_SLOTS = "rootfs"
 RAUC_BUNDLE_FORMAT = "verity"
 RAUC_SLOT_rootfs = "image-fx"
