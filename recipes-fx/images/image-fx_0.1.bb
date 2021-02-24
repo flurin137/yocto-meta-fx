@@ -6,3 +6,5 @@ include recipes-core/images/core-image-minimal.bb
 IMAGE_FEATURES_append = " splash ssh-server-dropbear"
 IMAGE_INSTALL_append = " rauc libubootenv-bin"
 IMAGE_FSTYPES_append = " wic ext4.gz"
+
+WKS_FILE = "sdimage-dual-raspberrypi.wks"
